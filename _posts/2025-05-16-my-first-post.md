@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "My First Post"
 date: 2025-05-16 12:00:00 +0100
 categories: [ctf, writeups]
