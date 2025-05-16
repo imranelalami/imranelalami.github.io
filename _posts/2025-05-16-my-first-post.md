@@ -9,7 +9,7 @@ image:
   path: /assets/img/spider.jpeg
 ---
 
-Welcome to my first CTF write-up! In this post, I’ll tackle the machine Lame from HackTheBox.
+Welcome to my first CTF write-up! In this post, I’ll tackle the machine [Lame from HackTheBox](https://hackthebox.com).
 
 
 
