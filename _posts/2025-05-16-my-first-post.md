@@ -13,9 +13,4 @@ Welcome to my first CTF write-up! In this post, I’ll tackle the machine Lame f
 
 
 
-```python
-print(hello world)
-```
-
-![My exploit screenshot](/assets/img/spider.jpeg)
 
