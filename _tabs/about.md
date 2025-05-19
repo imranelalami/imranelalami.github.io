@@ -4,7 +4,7 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-#Hey, I’m Imran.
+#Hey, I’m Imrane.
 
 Welcome to my blog. I’m an aspiring pentester focused on:
 
