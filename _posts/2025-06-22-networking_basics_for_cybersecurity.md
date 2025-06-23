@@ -110,7 +110,7 @@ In our previous analogy, I said that you can whisper to your friend next to you 
 </div>
 
 
-The Internet Protocol is what allows devices to find and communicate with each other over a network. It gives each device a unique address, called an IP address, which is like a home address for computers. When data needs to be sent across networks—whether it's a web page, a video, or a message—IP helps break that data into smaller chunks called packets and routes them from the sender to the receiver. If a packet is too big, IP can split it up and reassemble it at the destination. IP doesn’t guarantee delivery, timing, or order—it just does its best to push the packets toward the right place. There are two versions: IPv4, which is older and uses shorter addresses like “192.168.1.1,” and IPv6, which uses much longer addresses to support the growing number of devices on the internet.
+The Internet Protocol is what allows devices to find and communicate with each other over a network. It gives each device a unique address, called an IP address, which is like a home address for computers. When data needs to be sent across networks,whether it's a web page, a video, or a message IP helps break that data into smaller chunks called packets and routes them from the sender to the receiver. If a packet is too big, IP can split it up and reassemble it at the destination. IP doesn’t guarantee delivery, timing, or order,it just does its best to push the packets toward the right place. There are two versions: IPv4, which is older and uses shorter addresses like “192.168.1.1,” and IPv6, which uses much longer addresses to support the growing number of devices on the internet.
 
 
 
@@ -124,7 +124,7 @@ The Internet Protocol is what allows devices to find and communicate with each o
 </div>
 
 
-ICMP is a helper protocol used mainly for sending error messages and performing diagnostics on a network. It doesn’t carry user data like websites or files—instead, it helps devices report problems. For example, when you use the "ping" command to test if a server is reachable, your computer sends an ICMP Echo Request, and if the server is alive and reachable, it sends back an Echo Reply. If a router along the path is down or the destination is unreachable, ICMP can send back a message to let the sender know. It’s part of the Internet layer, just like IP, and plays a key role in network troubleshooting and communication health checks.
+ICMP is a helper protocol used mainly for sending error messages and performing diagnostics on a network. It doesn’t carry user data like websites or files,instead, it helps devices report problems. For example, when you use the "ping" command to test if a server is reachable, your computer sends an ICMP Echo Request, and if the server is alive and reachable, it sends back an Echo Reply. If a router along the path is down or the destination is unreachable, ICMP can send back a message to let the sender know. It’s part of the Internet layer, just like IP, and plays a key role in network troubleshooting and communication health checks.
 
 
 
@@ -137,7 +137,7 @@ ICMP is a helper protocol used mainly for sending error messages and performing 
           referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
-ARP works inside your local network to figure out which physical device is connected to which IP address. Every networked device has a MAC address—a unique identifier tied to its network hardware. When your computer wants to send data to another device on the same network, it knows the IP address but not the MAC address. ARP is used to ask, “Who has this IP?” and the device responds with its MAC address. That information is stored in a small table called the ARP cache, so the computer doesn’t have to ask again every time. ARP is essential for devices to talk to each other directly on a local network, but it's also a common target for attacks like ARP spoofing, where a hacker sends fake responses to mislead devices into sending data to the wrong place.
+ARP works inside your local network to figure out which physical device is connected to which IP address. Every networked device has a MAC address,a unique identifier tied to its network hardware. When your computer wants to send data to another device on the same network, it knows the IP address but not the MAC address. ARP is used to ask, “Who has this IP?” and the device responds with its MAC address. That information is stored in a small table called the ARP cache, so the computer doesn’t have to ask again every time. ARP is essential for devices to talk to each other directly on a local network, but it's also a common target for attacks like ARP spoofing, where a hacker sends fake responses to mislead devices into sending data to the wrong place.
 
 
 ## TCP (Transmission Control Protocol)
@@ -163,7 +163,7 @@ TCP is a transport protocol that ensures reliable communication between two devi
           referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
-UDP is another transport protocol, but it’s much simpler and faster than TCP. It doesn’t establish a connection, doesn’t check if the packets arrive, and doesn’t resend them if they’re lost. It just sends the data and moves on. This makes UDP useful in situations where speed is more important than perfection—like in online games, voice or video calls, and streaming, where it’s better to lose a small bit of data than to slow everything down trying to fix it. Because of this, UDP has much less overhead than TCP and is often the go-to for real-time or low-latency applications.
+UDP is another transport protocol, but it’s much simpler and faster than TCP. It doesn’t establish a connection, doesn’t check if the packets arrive, and doesn’t resend them if they’re lost. It just sends the data and moves on. This makes UDP useful in situations where speed is more important than perfection,like in online games, voice or video calls, and streaming, where it’s better to lose a small bit of data than to slow everything down trying to fix it. Because of this, UDP has much less overhead than TCP and is often the go-to for real-time or low-latency applications.
 
 
 ## FTP (File Transfer Protocol)
@@ -175,7 +175,7 @@ UDP is another transport protocol, but it’s much simpler and faster than TCP. 
           referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
-FTP is a protocol used to transfer files between a client and a server over a network. It's one of the oldest internet protocols and works by creating two separate connections: one for commands (like login and file lists) and another for the actual file data. These typically use port 21 and port 20, respectively. FTP allows users to upload or download files from a remote system, but by default, it’s not secure—it sends usernames, passwords, and file data in plain text. There are secure versions like FTPS and SFTP (which is actually based on SSH), but traditional FTP is still found in many environments, especially during pentesting or in legacy systems.
+FTP is a protocol used to transfer files between a client and a server over a network. It's one of the oldest internet protocols and works by creating two separate connections: one for commands (like login and file lists) and another for the actual file data. These typically use port 21 and port 20, respectively. FTP allows users to upload or download files from a remote system, but by default, it’s not secure,it sends usernames, passwords, and file data in plain text. There are secure versions like FTPS and SFTP (which is actually based on SSH), but traditional FTP is still found in many environments, especially during pentesting or in legacy systems.
 
 
 ## SMB (Server Message Block)
@@ -187,7 +187,7 @@ FTP is a protocol used to transfer files between a client and a server over a ne
           referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
-SMB is a protocol mainly used by Windows systems to share files, printers, and other resources across a network. If you've ever accessed a shared folder on another computer, there's a good chance SMB was involved. It runs over port 445 and can either work with older systems using NetBIOS or directly over TCP. There are different versions—SMB1 is outdated and insecure, while SMB2 and SMB3 are much improved. SMB is a common target in security assessments because it’s often misconfigured or exposed unnecessarily, leading to vulnerabilities like the one exploited in the WannaCry ransomware attack.
+SMB is a protocol mainly used by Windows systems to share files, printers, and other resources across a network. If you've ever accessed a shared folder on another computer, there's a good chance SMB was involved. It runs over port 445 and can either work with older systems using NetBIOS or directly over TCP. There are different versions,SMB1 is outdated and insecure, while SMB2 and SMB3 are much improved. SMB is a common target in security assessments because it’s often misconfigured or exposed unnecessarily, leading to vulnerabilities like the one exploited in the WannaCry ransomware attack.
 
 
 ## SSH (Secure Shell)
@@ -211,7 +211,7 @@ SSH is a secure way to remotely access another computer over a network, typicall
           referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
-HTTP is the protocol your browser uses to communicate with websites. It works over port 80 and follows a simple request-response pattern: your browser asks for a page, and the server sends it back. It’s stateless, meaning each request is independent—your browser has to include all necessary info each time. HTTPS is the secure version of HTTP and uses encryption (SSL/TLS) to protect the data being sent and received. It runs on port 443 and is what you see in the browser when there's a padlock icon. HTTPS ensures that passwords, personal info, and anything else you do on a site can’t be read by attackers watching the network.
+HTTP is the protocol your browser uses to communicate with websites. It works over port 80 and follows a simple request-response pattern: your browser asks for a page, and the server sends it back. It’s stateless, meaning each request is independent,your browser has to include all necessary info each time. HTTPS is the secure version of HTTP and uses encryption (SSL/TLS) to protect the data being sent and received. It runs on port 443 and is what you see in the browser when there's a padlock icon. HTTPS ensures that passwords, personal info, and anything else you do on a site can’t be read by attackers watching the network.
 
 
 ## DNS (Domain Name System)
@@ -237,7 +237,7 @@ DNS is like the phone book of the internet. It translates human-friendly domain 
           referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
-NFS is used mainly in Unix and Linux environments to let computers access files over a network as if they were on the local drive. This means you can mount a remote folder and open or edit files without copying them first. NFS makes networked storage seamless and efficient, especially in enterprise environments or labs. However, it’s often misconfigured—especially in CTFs and pentesting labs—where permissions are too loose or anonymous access is allowed, exposing sensitive files to attackers. NFS has several versions, each adding features and security improvements.
+NFS is used mainly in Unix and Linux environments to let computers access files over a network as if they were on the local drive. This means you can mount a remote folder and open or edit files without copying them first. NFS makes networked storage seamless and efficient, especially in enterprise environments or labs. However, it’s often misconfigured,especially in CTFs and pentesting labs,where permissions are too loose or anonymous access is allowed, exposing sensitive files to attackers. NFS has several versions, each adding features and security improvements.
 
 ---
 
