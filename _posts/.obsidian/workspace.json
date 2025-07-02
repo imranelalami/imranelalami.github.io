@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2025-06-22-networking_basics_for_cybersecurity.md",
+                "file": "2025-06-30-Fixclick.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-06-22-networking_basics_for_cybersecurity"
+              "title": "2025-06-30-Fixclick"
             }
           }
         ]
@@ -170,8 +170,9 @@
   },
   "active": "62156b079d0f9058",
   "lastOpenFiles": [
-    "2025-05-16-lame.md",
     "2025-06-22-networking_basics_for_cybersecurity.md",
+    "2025-06-30-Fixclick.md",
+    "2025-05-16-lame.md",
     "Pasted image 20250623160459.png"
   ]
 }
